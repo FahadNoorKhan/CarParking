@@ -1,0 +1,23 @@
+<form [formGroup]=carParkForm class="parking-form" (ngSubmit)="onSubmit()">
+  <h2>Your Details</h2>
+  <mat-form-field appearance="outline" class="internal-form">
+    <input matInput placeholder="Full Name" formControlName="fName">
+    <mat-hint>Ahmed</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="internal-form">
+    <input matInput placeholder="Car Number" formControlName="carNo">
+    <mat-hint>Q17689</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="internal-form">
+    <input matInput placeholder="Car Category" formControlName="carCat" >
+    <mat-hint>Sedan, Hatcback</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="internal-form">
+    <input matInput placeholder="Cell Number" formControlName="contactNo">
+    <mat-hint>+9231******</mat-hint>
+  </mat-form-field>
+</form>
+<div class="controls">
+  <button mat-raised-button color="primary" type="submit" (click)="onSubmit()">
+    <mat-icon>done</mat-icon>Submit</button>
+</div>

@@ -1,0 +1,37 @@
+body{
+  padding: 20px;
+  h1{
+    color: white;
+    text-align: center;
+    font-family: monospace serif;
+  }
+  .mat-card{
+    width: 650px;
+    margin: auto;
+    background-color: rgba($color: #bcd3f1, $alpha: 0.8);
+    .content{
+      text-align: center;
+      padding: 25px;
+      h2{
+        margin-bottom: 40px;
+        font-size: 40px;
+        font-family: monospace, serif;
+        color: lightness($color: #807e7e);
+      }
+      .controls{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px;
+        .mat-raised-button{
+          .mat-button-wrapper{
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+          }
+        }
+      }
+
+    }
+  }
+
+}

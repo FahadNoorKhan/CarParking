@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body>
+  <h1>Welcome To The Dubai Mall</h1>
+  <mat-card>
+    <div class="content">
+      <h2>Parking Facility</h2>
+      <div class="controls" *ngIf="click">
+        <button mat-raised-button color="primary" (click)="carPark(false)">
+          <mat-icon>rv_hookup</mat-icon>Click to Park</button>
+        <button mat-raised-button color="accent" (click)="carFind(false)">
+          <mat-icon>airport_shuttle</mat-icon>Find Car</button>
+      </div>
+
+      <div *ngIf="!click">
+        <app-form-component></app-form-component>
+      </div>
+      <div class="controls" *ngIf="!click">
+        <button mat-raised-button color="primary" (click)="carPark(true)">
+          <mat-icon>home</mat-icon>Home</button>
+      </div>
+    </div>
+  </mat-card>
+</body>
+</html>
